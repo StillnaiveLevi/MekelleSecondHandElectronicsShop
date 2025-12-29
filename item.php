@@ -27,7 +27,7 @@ include 'connect.php'; ?>
   }
   h1 {
     margin-top: 0;
-    color: #2c3e50;
+    color: white;
   }
   form {
     margin-bottom: 20px;
@@ -64,11 +64,34 @@ include 'connect.php'; ?>
     background: #2c3e50;
     color: #fff;
   }
+  nav {
+    background: #2c3e50;         
+    display: flex;                
+    justify-content: center;      
+    padding: 12px 0;
+    gap: 30px;                  
+  }
+
+  nav a {
+    color: #ecf0f1;               
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+  }
 </style>
 </head>
 <body>
-<h4 align="right"><a href="http://localhost/DBgroupassignment/index.php">Home-Page</a></h4>
-<h1>Item Table</h1>
+<header>
+    <h1>Mekelle Second-Hand Electronics Shop</h1>
+    <p>Manage gadgets, accessories, users, and orders</p>
+  </header>
+  <nav>
+      <a href="http://localhost/DBgroupassignment/index.php">Home-Page</a>
+      <a href="http://localhost/DBgroupassignment/update.php">update-Info</a>
+</nav>
 
 <form method="POST">
   <input name="itemid" placeholder="Item ID">

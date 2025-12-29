@@ -10,6 +10,17 @@ include 'connect.php'; ?>
       font-family: Arial; 
       margin:20px; 
     }
+    header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+ 
+  h1 {
+    margin-top: 0;
+    color: white;
+  }
     input, button { 
       margin:5px; 
       padding:6px; 
@@ -32,11 +43,34 @@ include 'connect.php'; ?>
       color:#fff; 
       border:none; 
     }
+    nav {
+    background: #2c3e50;         
+    display: flex;                
+    justify-content: center;      
+    padding: 12px 0;
+    gap: 30px;                  
+  }
+
+  nav a {
+    color: #ecf0f1;               
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+  }
   </style>
 </head>
 <body>
-<h4 align="right"><a href="http://localhost/DBgroupassignment/index.php">Home-Page</a></h4>
-<h1><center>Accessory Table</center></h1>
+<header>
+    <h1>Mekelle Second-Hand Electronics Shop</h1>
+    <p>Manage gadgets, accessories, users, and orders</p>
+  </header>
+  <nav>
+      <a href="http://localhost/DBgroupassignment/index.php">Home-Page</a>
+      <a href="http://localhost/DBgroupassignment/update.php">update-Info</a>
+</nav>
 
 <!-- Create/Update Form -->
 <form method="POST">
@@ -70,7 +104,7 @@ $rows = $pdo->query("SELECT * FROM accessory")->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <table>
-<tr><th>ItemID</th><th>Type</th><th>Compatability</th><th>Material</th><th>Warranty</th><th>Actions</th></tr>
+<tr><th>ItemID</th><th>Type</th><th>Compatability</th><th>Material</th></tr>
 <?php foreach($rows as $r): ?>
 <tr>
   <td><?= $r['itemid'] ?></td>
