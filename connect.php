@@ -1,5 +1,5 @@
 <?php
-$host = "dpg-d561imv5r7bs73fb5vkg-a";
+$host = "https://dpg-d561imv5r7bs73fb5vkg-a.frankfurt-postgres.render.com";
 $port = 5432;
 $dbname = "mekelleelectronicsshop";
 $user = "stillnaive";
