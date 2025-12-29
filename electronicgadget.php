@@ -26,7 +26,7 @@
   }
   h1 {
     margin-top: 0;
-    color: #white;
+    color: white;
   }
   form {
     margin-bottom: 20px;
