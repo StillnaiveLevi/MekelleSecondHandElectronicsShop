@@ -68,8 +68,8 @@ include 'connect.php'; ?>
     <p>Manage gadgets, accessories, users, and orders</p>
   </header>
   <nav>
-      <a href="http://localhost/DBgroupassignment/index.php">Home-Page</a>
-      <a href="http://localhost/DBgroupassignment/update.php">update-Info</a>
+      <a href="/index.php">Home-Page</a>
+      <a href="/update.php">update-Info</a>
 </nav>
 
 <!-- Create/Update Form -->

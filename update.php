@@ -46,7 +46,7 @@
 </nav>
 <div class="container">
 
-<form method="POST">
+<form action="/update.php" method="POST">
   <label>Select Table:</label>
   <select name="table" required>
     <option value="item">Item</option>
