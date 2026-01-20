@@ -89,8 +89,8 @@ include 'connect.php'; ?>
     <p>Manage gadgets, accessories, users, and orders</p>
   </header>
   <nav>
-      <a href="/index.php">Home-Page</a>
-      <a href="/update.php">update-Info</a>
+      <a href="./index.php">Home-Page</a>
+      <a href="./update.php">update-Info</a>
 </nav>
 
 <form method="POST">

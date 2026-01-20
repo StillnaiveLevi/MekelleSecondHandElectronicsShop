@@ -68,11 +68,11 @@ include 'connect.php'; ?>
     <p>Manage gadgets, accessories, users, and orders</p>
   </header>
   <nav>
-      <a href="/index.php">Home-Page</a>
-      <a href="/update.php">update-Info</a>
+      <a href="./index.php">Home-Page</a>
+      <a href="./update.php">update-Info</a>
 </nav>
 
-<!-- Create/Update Form -->
+
 <form method="POST">
   <input name="itemid" placeholder="Item ID">
   <input name="accessorytype" placeholder="Type">
@@ -81,7 +81,7 @@ include 'connect.php'; ?>
 </form>
 
 <?php
-// CREATE
+//create
 if (isset($_POST['add'])) {
   $stmt = $pdo->prepare("INSERT INTO accessory (itemid, accessorytype, compatibility)
                          VALUES (:id,:type,:compat)");
